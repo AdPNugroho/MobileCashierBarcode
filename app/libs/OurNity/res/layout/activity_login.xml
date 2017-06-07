@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true"
+    android:id="@+id/LoginRelative">
+
+
+    <!--Logo-->
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-105dp"
+        android:layout_marginTop="-90dp"
+        android:padding="100dp"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/logo"/>
+
+    <!--Input Teks 1-->
+    <EditText
+        android:id="@+id/iptEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/bg_white_login"
+        android:drawableEnd="@drawable/ic_mail"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#424242"
+        android:textColorHint="#616161"
+        android:textSize="17sp"
+        android:theme="@style/TextLabel"
+        android:typeface="sans" />
+
+    <!--Input Teks 2-->
+    <EditText
+        android:id="@+id/iptPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iptEmailLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="90dp"
+        android:background="@drawable/bg_white_login"
+        android:drawableEnd="@drawable/ic_locked"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:textColor="#424242"
+        android:textColorHint="#616161"
+        android:textSize="17sp"
+        android:theme="@style/TextLabel"
+        android:typeface="sans" />
+
+    <!--Tombol Login-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/iptPasswordLogin"
+        android:layout_centerHorizontal="true" />
+
+    <!--Teks nanya-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/belum_punya"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+    <!--Teks Daftar-->
+    <TextView
+        android:id="@+id/txtDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLink"
+        android:text="@string/daftar"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <!--Teks Lupa-->
+    <TextView
+        android:id="@+id/txtLupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iptPasswordLogin"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorLink"
+        android:text="@string/lupa_sandi" />
+
+
+</RelativeLayout>
+

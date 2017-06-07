@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!--BG putih-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/bg_white_regis"
+        android:padding="20dp">
+
+        <!--Teks nama-->
+        <EditText
+            android:id="@+id/iptNamaRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_profile"
+            android:ems="13"
+            android:hint="@string/nama"
+            android:inputType="textPersonName"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:theme="@style/TextLabel"
+            android:typeface="sans"/>
+
+        <!--Teks email-->
+        <EditText
+            android:id="@+id/iptEmailRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iptNamaRegis"
+            android:drawableEnd="@drawable/ic_mail"
+            android:ems="13"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:theme="@style/TextLabel"
+            android:typeface="sans"/>
+
+        <!--Teks password-->
+        <EditText
+            android:id="@+id/iptPasswordRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iptEmailRegis"
+            android:drawableEnd="@drawable/ic_locked"
+            android:ems="13"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:theme="@style/TextLabel"
+            android:typeface="sans"/>
+
+        <!--Teks password 2-->
+        <EditText
+            android:id="@+id/iptKomPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iptPasswordRegis"
+            android:drawableEnd="@drawable/ic_locked"
+            android:ems="13"
+            android:hint="@string/konfirmasi_pass"
+            android:inputType="textPassword"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:theme="@style/TextLabel"
+            android:typeface="sans"/>
+
+        <!--Teks nomor hp-->
+        <EditText
+            android:id="@+id/iptPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iptKomPassword"
+            android:drawableEnd="@drawable/ic_phone"
+            android:ems="13"
+            android:hint="@string/nope"
+            android:inputType="phone"
+            android:textColor="#424242"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:theme="@style/TextLabel"
+            android:typeface="sans"/>
+
+        <!--Tombol daftar-->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="235dp"
+            android:background="@drawable/rounded_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/daftar"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--Teks nanya-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        android:text="@string/sudah_punya"
+        android:textColor="#fff"/>
+
+    <!--Teks login-->
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLink"/>
+
+    <!--Logo-->
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_small"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

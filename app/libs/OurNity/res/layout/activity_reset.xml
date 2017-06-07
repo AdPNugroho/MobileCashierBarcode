@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.Toolbar>
+
+    <!--Teks email-->
+    <EditText
+        android:id="@+id/iptReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="40dp"
+        android:ems="12"
+        android:background="@drawable/stroke_input"
+        android:padding="10dp"
+        android:textColor="#616161"
+        android:hint="@string/email"
+        android:drawableEnd="@drawable/ic_lock"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans"/>
+
+    <!--Tombol reset-->
+    <Button
+        android:id="@+id/btnReset"
+        android:background="@color/colorGreyoung"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iptReset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/iptReset"
+        android:layout_alignEnd="@+id/iptReset"
+        android:layout_marginTop="10dp"
+        android:text="@string/reset" />
+
+    <!--Logo-->
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo_blue"
+        android:layout_below="@+id/toolbar2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

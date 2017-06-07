@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Lapor Bug"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_ladybug"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/toolbar3"
+        android:layout_alignStart="@+id/txtSubjekbug"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/txtSubjekbug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/txtDeskripbug"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Subjek"
+        android:background="@drawable/stroke_input"
+        android:padding="10sp"/>
+
+    <EditText
+        android:id="@+id/txtDeskripbug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="17"
+        android:background="@drawable/stroke_input"
+        android:padding="10sp"
+        android:hint="Deskripsi bug"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/txtSubjekbug"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnKirimbug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtDeskripbug"
+        android:layout_below="@+id/txtDeskripbug"
+        android:layout_marginTop="13dp"
+        android:text="KIRIM"
+        android:textColor="#fff"
+        android:background="@color/colorGreyoung"
+        android:layout_alignEnd="@+id/txtDeskripbug" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+</RelativeLayout>

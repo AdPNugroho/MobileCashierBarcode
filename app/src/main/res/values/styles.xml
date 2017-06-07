@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCompatCaptureTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">#ffb341</item>
+        <item name="colorPrimaryDark">#ffb341</item>
+        <item name="colorAccent">#ffb341</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+    <!-- Hint color and label color in FALSE state -->
+    <item name="android:textColorHint">@color/colorHintFalse</item>
+    <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+    <item name="colorAccent">@color/colorHint</item>
+    <item name="colorControlNormal">@color/colorGrey</item>
+    <item name="colorControlActivated">@color/colorHint</item>
+    </style>
+
+    <!--Actionbar Theme-->
+    <style name="AppTheme.ActionBar" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+</resources>
