@@ -65,6 +65,9 @@ public class ActivityDataBarang extends AppCompatActivity {
                         inputHarga.setText("");
                     }
                 }
+                ActivityBarang.ab.refreshCounter();
+                //TODO TOAST ALERTER
+                //TODO FINISH ACTIVITY BACK TO MAIN
             }
         });
     }
@@ -76,7 +79,6 @@ public class ActivityDataBarang extends AppCompatActivity {
             inputBarcode.setText(String.valueOf(barcode));
             inputNama.requestFocus();
         } else {
-            // This is important, otherwise the result will not be passed to the fragment
             super.onActivityResult(requestCode, resultCode, data);
         }
     }

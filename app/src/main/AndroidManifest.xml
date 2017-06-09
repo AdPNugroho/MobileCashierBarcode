@@ -27,9 +27,7 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".DetailTransaksi" />
         <activity android:name=".ActivityDataBarang" />
-        <activity
-            android:name=".ActivityDaftarBarang"
-            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".ActivityDaftarBarang"/>
         <activity android:name=".ActivityRule" />
         <activity android:name=".ActivityUpdateData"></activity>
     </application>

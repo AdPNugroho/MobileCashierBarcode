@@ -14,8 +14,8 @@
         android:orientation="horizontal"
         android:layout_weight="8">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerBarang"
+        <ListView
+            android:id="@+id/listDaftarBarang"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -27,12 +27,12 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSearchData"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Cari Data Barang"
             android:background="@drawable/bg_blue_box"
-            android:textColor="@color/textColorPrimary"/>
+            android:text="Cari Data Barang"
+            android:textColor="@color/textColorPrimary" />
     </LinearLayout>
 </LinearLayout>
