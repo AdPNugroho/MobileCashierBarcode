@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ActivityBarang" />
         <activity android:name=".ActivityTransaksi" />
@@ -27,9 +22,21 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".DetailTransaksi" />
         <activity android:name=".ActivityDataBarang" />
-        <activity android:name=".ActivityDaftarBarang"/>
+        <activity android:name=".ActivityDaftarBarang" />
         <activity android:name=".ActivityRule" />
-        <activity android:name=".ActivityUpdateData"></activity>
+        <activity android:name=".ActivityUpdateData" />
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:theme="@style/Splashscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

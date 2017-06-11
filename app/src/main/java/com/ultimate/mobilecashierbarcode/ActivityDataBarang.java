@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.tapadoo.alerter.Alerter;
 
 public class ActivityDataBarang extends AppCompatActivity {
     private Button scan, save;
@@ -66,8 +67,11 @@ public class ActivityDataBarang extends AppCompatActivity {
                     }
                 }
                 ActivityBarang.ab.refreshCounter();
-                //TODO TOAST ALERTER
-                //TODO FINISH ACTIVITY BACK TO MAIN
+                Alerter.create(ActivityDataBarang.this)
+                        .setTitle("Information")
+                        .setText("Tambah Barang Berhasil")
+                        .setBackgroundColor(R.color.colorHint)
+                        .show();
             }
         });
     }
